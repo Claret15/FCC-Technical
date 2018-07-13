@@ -1,0 +1,260 @@
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #36393A;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+/* ********* CSS for nav section ********* */
+
+nav {
+  height: 100%;
+  min-width: 290px;
+  position: fixed;
+  width: 300px;
+  -moz-width: 250px;
+}
+
+nav ul {
+  height: 75%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+}
+
+nav header {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+nav li {
+  border-bottom: 1px black solid;
+  /* add border to bottom */
+  font-weight: 400;
+  list-style-type: none;
+  padding: 0;
+  /* remove default padding for li */
+}
+
+nav li a {
+  display: block;
+  /* makes the area clickable */
+  padding: 15px;
+  /* add padding around text */
+}
+
+nav li:first-child {
+  border-top: 1px black solid;
+  /* first nav li to have a top bottom */
+}
+
+nav a:link {
+  color: #36393A;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #36393a;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #112366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:active {
+  color: #36393a;
+  font-weight: none;
+  text-decoration: none;
+}
+
+/* ********* CSS for main section links ********* */
+
+main a:link {
+  color: #112366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main a:visited {
+  color: #D36700;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+/* ********* CSS for main section ********* */
+
+main {
+  left: 300px;
+  margin-top: 20px;
+  padding: 0 20px 100px 20px;
+  position: absolute;
+}
+
+section>header {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+hr {
+  border: 2px solid #026E82;
+  margin: 30px 0;
+}
+
+.div-yellow {
+  background-color: #ffffcc;
+  border-left: 6px solid #ffeb3b;
+  margin: 24px 0;
+  padding: 10px 0 10px 20px;
+}
+
+.div-yellow>p {
+  display: block;
+}
+
+.image {
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+.sub-heading {
+  background-color: rgba(98, 230, 255, 0.6);
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 5px 0 40px;
+}
+
+code {
+  background-color: #3B3C40;
+  color: #FFFFFF;
+  display: block;
+  font-family: 'Play', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  padding: 10px 0 10px 20px;
+  white-space: pre;
+  overflow: auto;
+}
+
+p {
+  margin-bottom: 24px;
+}
+
+/* Change <code> style when contained in <p> */
+
+p>code {
+  background-color: #3B3C40;
+  border-left: 1em;
+  border-left-style: none;
+  border-radius: 0;
+  display: inline;
+  font-family: 'Play', sans-serif;
+  line-height: normal;
+  padding: 0 5px;
+}
+
+/* Change color of <code> text when contained in <p> */
+
+.val-color {
+  color: yellow;
+}
+
+.prop-color {
+  color: white;
+}
+
+/* ********* Font Awesome styling ********* */
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.note::before {
+  color: grey;
+  content: "\f249";
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  font-weight: 900;
+  padding-right: 10px;
+  padding-top: 3px;
+}
+
+.external-link::before {
+  content: "\f35d";
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.view-link::before {
+  content: "\f06e";
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.div-note {
+  background-color: #ffffcc;
+  border-left: 6px solid #ffeb3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin: 24px 0;
+  padding: 10px 20px;
+}
+
+.div-note p {
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* ********* MEDIA QUERIES ********* */
+
+@media only screen and (max-width: 800px) {
+  nav {
+    max-height: 275px;
+    min-width: 290px;
+    position: absolute;
+    width: 100%;
+  }
+  main {
+    left: 0;
+    margin-top: 20px;
+    padding: 0 20px 100px 20px;
+    position: relative;
+    top: 300px;
+  }
+  nav header {
+    font-size: 1.5em;
+  }
+  section>header {
+    font-size: 1.5em;
+  }
+  .sub-heading {
+    font-size: 1.25em;
+    padding: 0 10px 0 10px;
+  }
+}

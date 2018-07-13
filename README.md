@@ -1,2 +1,2 @@
 # FCC-Technical
-FreeCodeCamp - RWD Project - Tribute Page
+FreeCodeCamp - RWD Project - Technical Document Page
